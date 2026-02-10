@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./V-Form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+            <form  action="https://api.web3forms.com/submit" method="POST" class="contactleft">
+                <div class="contact-left-title">
+                    <h2>Get In Touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="9f1a9965-4c0f-425f-bc2f-38a88ac4f943">
+                <input type="text" name="name" placeholder="Enter your name" class="contact-input" required id="Name" onkeyup="validationName()">
+                <span id="name-error" class="error"></span>
+                <input type="number" name="mobile-no" placeholder="Enter your phone number" class="contact-input" required id="phone" onkeyup="phoneErrorRs()">
+                <span id="phone-error" class="error"></span>
+                <input type="email" name="email" placeholder="Enter your email" class="contact-input" required>
+                <span id="email-error" class="error"></span>
+                <textarea name="message" class="contact-input" required></textarea>
+                <span id="message-error" class="error"></span>
+                <button type="submit" class="btnn">Submit<img src="./arrow_icon.png"></button>
+                <span id="submit-error" class="error"></span>
+            </form>
+        <div class="contact-right">
+            <img src="./right_img.png">
+             
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="./V-Form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
